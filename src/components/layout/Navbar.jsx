@@ -42,7 +42,7 @@ export default function Navbar() {
         {/* Right: Primary CTA (hide on samll screens) */}
         <a
           href="/sign-up"
-          className="hideen md: inline-block rounded-lg px-4 py-2 txt-sm font-medium text-black bg-white hover:opacity-90 transition"
+          className="hideen md: inline-block rounded-lg px-4 py-2 txt-sm font-medium text-black bg-white hover:opacity-90 transition hover:scale-[1.05]"
         >
           Get Started
         </a>
