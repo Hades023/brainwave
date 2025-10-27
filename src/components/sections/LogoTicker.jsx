@@ -1,4 +1,3 @@
-// src/components/sections/LogoTicker.jsx
 import Container from "../ui/Container.jsx";
 import Section from "../ui/Section.jsx";
 import { logos } from "../../data/logos.js";
@@ -13,10 +12,8 @@ export default function LogoTicker() {
 
         <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-4" role="list">
           {logos.map((l) => (
-            <li key={l.id} className="flex items-center gap-2 text-white/80" aria-label={l.label} title={l.label}>
-              <span className="text-xl" aria-hidden>
-                {l.glyph}
-              </span>
+            <li key={l.id} className="flex items-center gap-2 text-white/80" title={l.label}>
+              <span className="text-xl" aria-hidden>{l.glyph}</span>
               <span className="text-sm">{l.label}</span>
             </li>
           ))}

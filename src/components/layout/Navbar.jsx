@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
 import Container from "../ui/Container.jsx";
+import { NavLink } from "react-router-dom";
 
 const links = [
   { to: "/features", label: "Features" },
@@ -12,16 +12,13 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-black/70 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
-        {/* Left: Logo/Brand */}
+        {/* Left: Logo/brand */}
         <a href="/" className="flex items-center gap-2">
-          <span
-            className="inline-block h-6 w-6 rounded bg-white/80"
-            aria-hidden
-          />
-          <span className="text-white font-semibold">Brainwave</span>
+          <span className="inline-block h-6 w-6 rounded bg-white/80" aria-hidden />
+          <span className="text-white font-semibold">BrainGPT</span>
         </a>
 
-        {/* Center: Nav Links (hide on small screens) */}
+        {/* Center: Nav (desktop) */}
         <nav className="hidden md:block">
           <ul className="flex items-center gap-6 text-sm text-white/80">
             {links.map((link) => (
@@ -29,9 +26,7 @@ export default function Navbar() {
                 <NavLink
                   to={link.to}
                   className={({ isActive }) =>
-                    `transition hover:text-white ${
-                      isActive ? "text-white" : ""
-                    }`
+                    `transition hover:text-white ${isActive ? "text-white" : ""}`
                   }
                 >
                   {link.label}
@@ -40,16 +35,18 @@ export default function Navbar() {
             ))}
           </ul>
         </nav>
-        {/* Right: Primary CTA (hide on small screens) */}
+
+        {/* Right: CTA (desktop) */}
         <a
           href="/sign-up"
-          className="hidden md:inline-block rounded-lg px-4 py-2 text-sm font-medium text-black bg-white hover:opacity-90 transition hover:scale-[1.05]"
+          className="hidden md:inline-block rounded-lg px-4 py-2 text-sm font-medium text-black bg-white hover:opacity-90 transition"
         >
-          Get Started
+          Get started
         </a>
-        {/* Mobile Menu Toggle (show on small screens) */}
+
+        {/* Mobile menu placeholder */}
         <button
-          className="md:hidden inline-flex items-center justify-center founded px-3 py-2 ring-1 ring-white/30 text-white/90"
+          className="md:hidden inline-flex items-center justify-center rounded px-3 py-2 ring-1 ring-white/30 text-white/90"
           aria-label="Open menu"
         >
           ☰

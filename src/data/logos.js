@@ -1,4 +1,3 @@
-// src/data/logos.js
 export const logos = [
   { id: "openai", label: "OpenAI", glyph: "🧠" },
   { id: "anthropic", label: "Anthropic", glyph: "🏛️" },

@@ -2,27 +2,31 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
+import Features from "./pages/Features.jsx";
+import Pricing from "./pages/Pricing.jsx";
+import HowToUse from "./pages/HowToUse.jsx";
+import Roadmap from "./pages/Roadmap.jsx";
+import SignUp from "./pages/SignUp.jsx";
+import SignIn from "./pages/SignIn.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      {
-        index: true,
-        element: <Home />,
-      },
+      { index: true, element: <Home /> },
+      { path: "features", element: <Features /> },
+      { path: "pricing", element: <Pricing /> },
+      { path: "how-to-use", element: <HowToUse /> },
+      { path: "roadmap", element: <Roadmap /> },
+      { path: "sign-up", element: <SignUp /> },
+      { path: "sign-in", element: <SignIn /> },
     ],
   },
 ]);
-
-// STEP 1: Render our App component (which is the default export from App.jsx)
-// - Wrap in StrictMode to help catch potential problems
-// - Wrap in BrowserRouter to enable routing (not used in this simple demo, but good practice)
-//   - BrowserRouter uses the HTML5 history API (pushState, replaceState and the popstate event)
-//     to keep your UI in sync with the URL
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

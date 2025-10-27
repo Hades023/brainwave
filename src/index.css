@@ -1,28 +1,12 @@
-/* STEP 1: Load Tailwind v4 (this generates utilities at build time) */
 @import "tailwindcss";
 
-/* STEP 2: Define a few design tokens using Tailwind v4's @theme block
-   - These become CSS custom properties you can use in class utilities
-*/
 @theme {
-  --font-sans: "Iner", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --color-bg: #0a0a0b;
   --color-fg: #ffffff;
 }
 
-:root {
-  color-scheme: dark;
-}
-
-/* STEP 3: Basic global setup so the app fills the screen */
-html,
-body,
-#root {
-  height: 100%;
-}
-
-/* STEP 4: Use our tokens for the body styles */
-body {
-  background: var(--color-bg);
-  color: var(--color-fg);
-}
+:root { color-scheme: dark; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-sans); }
+a { text-decoration: none; }
