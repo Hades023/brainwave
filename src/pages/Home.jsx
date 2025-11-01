@@ -31,7 +31,7 @@ export default function Home() {
           {/* CTAs */}
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="/work"
+              href="/portfolio"
               aria-label="Check out my work"
               className="rounded-lg bg-white text-black px-6 py-3 font-medium hover:opacity-90 transition
                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"

@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu.jsx";
 
 const links = [
   { to: "/about", label: "About Me" },
-  { to: "/work", label: "Portfolio" },
+  { to: "/portfolio", label: "Portfolio" },
   { to: "/resume", label: "Resume" },
 ];
 

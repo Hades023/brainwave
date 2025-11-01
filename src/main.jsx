@@ -37,8 +37,7 @@ const router = createBrowserRouter([
       { path: "sign-in", element: <SignIn /> },
 
       // portfolio routes
-      { path: "work", element: <Work /> },
-      { path: "work/:slug", element: <Project /> },
+      { path: "portfolio", element: <Work /> },
       { path: "portfolio/:slug", element: <Project /> },
       { path: "about", element: <About /> },
       { path: "resume", element: <Resume /> },

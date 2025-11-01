@@ -13,9 +13,9 @@ export default function Project() {
       <Section>
         <Container>
           <h1 className="text-2xl font-bold">Project not found</h1>
-          <p className="mt-2 text-white/80">We couldn't find a project at /work/{slug}</p>
+          <p className="mt-2 text-white/80">We couldn't find a project at /portfolio/{slug}</p>
           <div className="mt-6">
-            <button 
+            <button
               onClick={() => navigate(-1)}
               className="rounded-lg ring-1 ring-white/30 px-4 py-2 hover:bg-white/10 transition"
             >

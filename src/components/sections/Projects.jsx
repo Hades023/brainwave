@@ -31,7 +31,7 @@ export default function Projects() {
         {/* Bottom CTA */}
         <div className="mt-10 flex justify-center">
           <a
-            href="/work"
+            href="/portfolio"
             className="rounded-lg ring-1 ring-white/30 px-6 py-3 text-white hover:bg-white/10 transition
                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
           >
