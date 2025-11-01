@@ -2,12 +2,8 @@ import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
 import TechStack from "../components/sections/TechStack.jsx";
 import Projects from "../components/sections/Projects.jsx";
-import Integrations from "../components/sections/Integrations.jsx";
-import FeatureSplitA from "../components/sections/FeatureSplitA.jsx";
-import CreatorShowcase from "../components/sections/CreatorShowcase.jsx";
-import Pricing from "../components/sections/Pricing.jsx";
 import Testimonials from "../components/sections/Testimonials.jsx";
-import Roadmap from "../components/sections/Roadmap.jsx";
+import Clients from "../components/sections/Clients.jsx";
 import FinalCTA from "../components/sections/FinalCTA.jsx";
 
 export default function Home() {
@@ -129,12 +125,8 @@ export default function Home() {
 
       <TechStack />
       <Projects />
-      <Integrations />
-      <FeatureSplitA />
-      <CreatorShowcase />
-      <Pricing />
       <Testimonials />
-      <Roadmap />
+      <Clients />
       <FinalCTA />
     </main>
   );

@@ -8,8 +8,10 @@ export default function Testimonials({ headingLevel: H = "h2", mode = "grid" }) 
     <Section aria-labelledby="testimonials-heading">
       <Container>
         <header className="max-w-2xl">
-          <H id="testimonials-heading" className="text-2xl sm:text-3xl font-bold">Loved by teams and creators</H>
-          <p className="mt-2 text-white/80">A few notes from people using it every day.</p>
+          <H id="testimonials-heading" className="text-2xl sm:text-3xl font-bold">
+            Testimonials
+          </H>
+          <p className="mt-2 text-white/80">A few quotes from people I've worked for and a few I've worked with.</p>
         </header>
 
         {mode === "grid" ? (
