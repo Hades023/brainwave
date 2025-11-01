@@ -18,7 +18,6 @@ export default function Navbar() {
         {/* Left: brand (flex-1) */}
         <div className="flex-1 flex justify-start">
           <a href="/" aria-label="Home — Joe Anonymous" className="flex items-center gap-2">
-            <span className="inline-block h-6 w-6 rounded bg-white/80" aria-hidden />
             <span className="text-white font-semibold">Joe Anonymous</span>
           </a>
         </div>
