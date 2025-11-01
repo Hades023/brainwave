@@ -41,4 +41,32 @@ export const projects = [
     image: "https://picsum.photos/300?random=6",
     href: "/portfolio/p6",
   },
+  {
+    id: "p7",
+    title: "Additional Project",
+    blurb: "Consectetur adipiscing elit. Nulla interdum urna quis magna lobortis.",
+    image: "https://picsum.photos/300?random=7",
+    href: "/portfolio/p7",
+  },
+  {
+    id: "p8",
+    title: "Another Project",
+    blurb: "Vestibulum sed nec ex non justo dictum venenatis.",
+    image: "https://picsum.photos/300?random=8",
+    href: "/portfolio/p8",
+  },
+  {
+    id: "p9",
+    title: "Creative Work",
+    blurb: "Mauris posuere malesuada. Eget finibus urna vestibulum.",
+    image: "https://picsum.photos/300?random=9",
+    href: "/portfolio/p9",
+  },
+  {
+    id: "p10",
+    title: "Web Application",
+    blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: "https://picsum.photos/300?random=10",
+    href: "/portfolio/p10",
+  },
 ];

@@ -5,7 +5,7 @@ import App from "./App.jsx";
 
 // Portfolio pages
 import Home from "./pages/Home.jsx";
-import Work from "./pages/Work.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
 import Project from "./pages/Project.jsx";
 import About from "./pages/About.jsx";
 import Resume from "./pages/Resume.jsx";
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
 
       // portfolio routes
-      { path: "portfolio", element: <Work /> },
+      { path: "portfolio", element: <Portfolio /> },
       { path: "portfolio/:slug", element: <Project /> },
       { path: "about", element: <About /> },
       { path: "resume", element: <Resume /> },

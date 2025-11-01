@@ -35,16 +35,6 @@ export default function Footer() {
               ))}
             </ul>
           </nav>
-
-          {/* Right: Contact button */}
-          <div className="flex-1 text-center md:text-right">
-            <a
-              href="/contact"
-              className="inline-block rounded-lg px-4 py-2 text-sm font-medium text-black bg-white hover:opacity-90 transition"
-            >
-              Contact Me
-            </a>
-          </div>
         </div>
 
         {/* External Links Section */}

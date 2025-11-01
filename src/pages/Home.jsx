@@ -141,8 +141,8 @@ export default function Home() {
       </Section>
 
       <TechStack />
-      <Projects />
-      <Testimonials />
+      <Projects limit={6} />
+      <Testimonials limit={3} />
       <Clients />
       <FinalCTA />
     </main>
