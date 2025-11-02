@@ -3,6 +3,7 @@ import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
 import Button from "../components/ui/Button.jsx";
 import { projects } from "../data/projects.js";
+import { FaArrowLeft } from "react-icons/fa";
 
 export default function Project() {
   const { slug } = useParams(); // expects id like "p1", "p2"...
@@ -29,11 +30,8 @@ export default function Project() {
     <Section>
       <Container>
         <nav className="text-sm text-white/70">
-          <Button
-            onClick={() => navigate(-1)}
-            variant="link"
-          >
-            ← Go Back
+          <Button onClick={() => navigate(-1)} variant="link" leftIcon={<FaArrowLeft className="w-4 h-4" />}>
+            Go Back
           </Button>
         </nav>
 

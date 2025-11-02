@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import Button from "../ui/Button.jsx";
+import { FaTimes } from "react-icons/fa";
 
 export default function MobileMenu({ open, onClose, links }) {
   const panelRef = useRef(null);
@@ -54,9 +55,8 @@ export default function MobileMenu({ open, onClose, links }) {
             variant="secondary"
             size="sm"
             aria-label="Close menu"
-          >
-            ✕
-          </Button>
+            iconOnly={<FaTimes className="w-4 h-4" />}
+          />
         </div>
 
         <nav className="p-4">
@@ -80,13 +80,7 @@ export default function MobileMenu({ open, onClose, links }) {
           </ul>
 
           {/* Contact CTA */}
-          <Button
-            as="a"
-            href="/contact"
-            onClick={onClose}
-            variant="primary"
-            className="mt-4 w-full justify-center"
-          >
+          <Button as="a" href="/contact" onClick={onClose} variant="primary" className="mt-4 w-full justify-center">
             Contact Me
           </Button>
         </nav>

@@ -26,12 +26,11 @@ export default function TechStack() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-xl transition group-hover:scale-105 group-active:scale-95 overflow-hidden">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-xl transition group-hover:scale-105 group-active:scale-95">
                   <img
-                    src={tech.logo}
-                    alt={`${tech.label} logo`}
-                    className="h-12 w-12 object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                    loading="lazy"
+                    src={tech.img}
+                    alt={tech.label}
+                    className="h-12 w-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
                 <span className="mt-2 block text-xs text-white/60 group-hover:text-white/80 transition-colors">

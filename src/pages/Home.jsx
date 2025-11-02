@@ -6,6 +6,7 @@ import Projects from "../components/sections/Projects.jsx";
 import Testimonials from "../components/sections/Testimonials.jsx";
 import Clients from "../components/sections/Clients.jsx";
 import FinalCTA from "../components/sections/FinalCTA.jsx";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* Social links with image placeholders */}
+              {/* Social links with SVG icons */}
               <nav aria-label="Social links" className="mt-6">
                 <ul className="flex items-center lg:justify-start justify-center gap-6 text-sm">
                   <li>
@@ -49,7 +50,7 @@ export default function Home() {
                       target="_blank"
                       rel="noreferrer"
                       variant="link"
-                      leftIcon={<img src="https://picsum.photos/20?random=201" alt="" className="w-5 h-5 rounded" />}
+                      leftIcon={<FaLinkedin className="w-5 h-5" />}
                       aria-label="LinkedIn (opens in a new tab)"
                     >
                       LinkedIn
@@ -63,7 +64,7 @@ export default function Home() {
                       target="_blank"
                       rel="noreferrer"
                       variant="link"
-                      leftIcon={<img src="https://picsum.photos/20?random=202" alt="" className="w-5 h-5 rounded" />}
+                      leftIcon={<FaGithub className="w-5 h-5" />}
                       aria-label="GitHub (opens in a new tab)"
                     >
                       GitHub
@@ -77,7 +78,7 @@ export default function Home() {
                       target="_blank"
                       rel="noreferrer"
                       variant="link"
-                      leftIcon={<img src="https://picsum.photos/20?random=203" alt="" className="w-5 h-5 rounded" />}
+                      leftIcon={<FaInstagram className="w-5 h-5" />}
                       aria-label="Instagram (opens in a new tab)"
                     >
                       Instagram
