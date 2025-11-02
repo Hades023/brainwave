@@ -20,7 +20,7 @@ export default function Projects({
     <Section aria-labelledby={headingId}>
       <Container>
         {/* Header */}
-        <header className="max-w-2xl">
+        <header className="text-center">
           <HeadingComponent id={headingId} className="text-2xl sm:text-3xl font-bold">
             {title}
           </HeadingComponent>

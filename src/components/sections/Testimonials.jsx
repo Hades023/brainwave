@@ -11,7 +11,7 @@ export default function Testimonials({ headingLevel = "h2", mode = "grid", limit
   return (
     <Section aria-labelledby="testimonials-heading">
       <Container>
-        <header className="max-w-2xl">
+        <header className="text-center">
           <HeadingComponent id="testimonials-heading" className="text-2xl sm:text-3xl font-bold">
             Testimonials
           </HeadingComponent>
