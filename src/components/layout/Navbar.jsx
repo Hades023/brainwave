@@ -25,7 +25,7 @@ export default function Navbar() {
 
         {/* Center: nav (flex-none, stays centered) */}
         <nav className="flex justify-center flex-none text-center">
-          <ul className="hidden md:flex items-center gap-6 text-sm text-white/80">
+          <ul className="hidden md:flex items-center gap-6 body-small">
             {links.map((link) => (
               <li key={link.to}>
                 <NavLink

@@ -20,11 +20,11 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
             {/* Text Content - 2/3 */}
             <div className="lg:col-span-2 text-center lg:text-left">
-              <h1 id="intro-heading" className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 id="intro-heading" className="heading-hero">
                 Hi, my name is Joe Anonymous. I create things for the web
               </h1>
 
-              <h2 className="mt-4 max-w-prose lg:mx-0 mx-auto text-white/80 text-lg">
+              <h2 className="mt-4 max-w-prose lg:mx-0 mx-auto body-large">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget
                 finibus urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere
                 malesuada
@@ -42,7 +42,7 @@ export default function Home() {
 
               {/* Social links with SVG icons */}
               <nav aria-label="Social links" className="mt-6">
-                <ul className="flex items-center lg:justify-start justify-center gap-6 text-sm">
+                <ul className="flex items-center lg:justify-start justify-center gap-6 text-caption">
                   <li>
                     <Button
                       as="a"
@@ -90,7 +90,7 @@ export default function Home() {
 
             {/* Circular Image - 1/3 */}
             <div className="lg:col-span-1 flex justify-center lg:justify-end">
-              <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-white/10 border-4 border-white/20">
+              <div className="w-64 h-64 lg:w-80 lg:h-80 card-avatar">
                 <img
                   src="https://picsum.photos/320?random=100"
                   alt="Joe Anonymous"

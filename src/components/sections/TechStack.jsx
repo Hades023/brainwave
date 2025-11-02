@@ -72,10 +72,10 @@ export default function TechStack() {
     <Section aria-labelledby="techstack-heading" className="py-12 sm:py-16">
       <Container>
         <header className="text-center">
-          <h2 id="techstack-heading" className="text-2xl sm:text-3xl font-bold">
+          <h2 id="techstack-heading" className="heading-section">
             My Tech Stack
           </h2>
-          <h3 className="mt-2 text-white/70">Tools I&apos;ve been using lately</h3>
+          <h3 className="mt-2 subheading-muted">Tools I&apos;ve been using lately</h3>
         </header>
 
         {/* Grid: 3/4/5 columns responsive */}
@@ -92,7 +92,7 @@ export default function TechStack() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-xl transition group-hover:scale-105 group-active:scale-95">
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-xl hover-scale">
                     {IconComponent && (
                       <IconComponent
                         className="h-12 w-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
@@ -101,7 +101,7 @@ export default function TechStack() {
                       />
                     )}
                   </div>
-                  <span className="mt-2 block text-xs text-white/60 group-hover:text-white/80 transition-colors">
+                  <span className="mt-2 block text-label group-hover:text-white/80 transition-colors">
                     {tech.label}
                   </span>
                 </a>

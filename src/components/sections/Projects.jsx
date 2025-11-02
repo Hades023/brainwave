@@ -22,7 +22,7 @@ export default function Projects({
       <Container>
         {/* Header */}
         <header className="text-center">
-          <HeadingComponent id={headingId} className="text-2xl sm:text-3xl font-bold">
+          <HeadingComponent id={headingId} className="heading-section">
             {title}
           </HeadingComponent>
           <p className="mt-2 text-white/80">{description}</p>

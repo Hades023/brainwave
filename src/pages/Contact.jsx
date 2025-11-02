@@ -90,11 +90,11 @@ export default function Contact() {
           <p className="text-white/70 mb-4">Or reach out directly:</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="mailto:christopher.brandon.hayes@gmail.com" className="text-white/80 hover:text-white transition">
-              your.email@example.com
+              christopher.brandon.hayes@gmail.com
             </a>
             <span className="hidden sm:block text-white/30">•</span>
             <a href="tel:+1-314-223-0739" className="text-white/80 hover:text-white transition">
-              (314) 223-0739)
+              (314) 223-0739
             </a>
           </div>
         </div>

@@ -1,15 +1,14 @@
 export default function ProjectCard({ image, title, blurb, href = "#" }) {
   return (
     <article
-      className="group h-[440px] rounded-xl border border-white/10 bg-white/5 p-0 overflow-hidden
-                   transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/20 focus-within:bg-white/10"
+      className="group card-project h-[440px] card-interactive hover:shadow-lg hover:shadow-black/20 focus-within:bg-white/10"
     >
       {/* Image */}
       <div className="aspect-[4/3] w-full overflow-hidden border-b border-white/10">
         <img
           src={image}
           alt={`${title} cover`}
-          className="h-full w-full object-cover transition group-hover:scale-[1.03]"
+          className="h-full w-full object-cover hover-scale-subtle"
           loading="lazy"
         />
       </div>

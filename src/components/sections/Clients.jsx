@@ -8,7 +8,7 @@ export default function Clients() {
       <Container>
         {/* Header */}
         <header className="max-w-2xl mx-auto text-center">
-          <h2 id="clients-heading" className="text-2xl sm:text-3xl font-bold">
+          <h2 id="clients-heading" className="heading-section">
             My Clients
           </h2>
           <p className="mt-2 text-white/80">
@@ -21,7 +21,7 @@ export default function Clients() {
           {clients.map((client) => (
             <div
               key={client.id}
-              className="flex items-center justify-center p-4 transition-all duration-300 hover:grayscale"
+              className="flex items-center justify-center p-4 hover-grayscale"
             >
               <img
                 src={client.logo}

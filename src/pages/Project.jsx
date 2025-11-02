@@ -14,8 +14,8 @@ export default function Project() {
     return (
       <Section>
         <Container>
-          <h1 className="text-2xl font-bold">Project not found</h1>
-          <p className="mt-2 text-white/80">We couldn't find a project at /portfolio/{slug}</p>
+          <h1 className="heading-section">Project not found</h1>
+          <p className="mt-2 body-default">We couldn't find a project at /portfolio/{slug}</p>
           <div className="mt-6">
             <Button onClick={() => navigate(-1)} variant="secondary" size="sm">
               Go Back
@@ -29,19 +29,19 @@ export default function Project() {
   return (
     <Section>
       <Container>
-        <nav className="text-sm text-white/70">
+        <nav className="body-small subheading-muted">
           <Button onClick={() => navigate(-1)} variant="link" leftIcon={<FaArrowLeft className="w-4 h-4" />}>
             Go Back
           </Button>
         </nav>
 
         <header className="mt-4 max-w-3xl">
-          <h1 className="text-3xl font-bold">{project.title}</h1>
-          <p className="mt-2 text-white/80">{project.blurb}</p>
+          <h1 className="heading-page">{project.title}</h1>
+          <p className="mt-2 body-default">{project.blurb}</p>
         </header>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+          <div className="card-base rounded-2xl overflow-hidden">
             <img
               src={project.image}
               alt={`${project.title} hero`}
@@ -50,13 +50,13 @@ export default function Project() {
             />
           </div>
           <div>
-            <h2 className="text-xl font-semibold">Overview</h2>
-            <p className="mt-2 text-white/80">
+            <h2 className="subheading-primary">Overview</h2>
+            <p className="mt-2 body-default">
               Replace this with a short case study: problem, your role, tools, constraints, outcome.
             </p>
 
             <h3 className="mt-6 font-semibold">Highlights</h3>
-            <ul className="mt-2 list-disc pl-5 text-white/80 space-y-1">
+            <ul className="mt-2 list-disc pl-5 body-default space-y-1">
               <li>Goal / KPI impact</li>
               <li>Key UX or dev contribution</li>
               <li>Notable constraint or insight</li>
