@@ -1,5 +1,6 @@
 import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
+import Button from "../components/ui/Button.jsx";
 
 export default function Contact() {
   return (
@@ -78,12 +79,9 @@ export default function Contact() {
 
           {/* Submit Button */}
           <div className="text-center">
-            <button
-              type="submit"
-              className="inline-flex items-center px-8 py-3 bg-white text-black font-medium rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40 transition"
-            >
+            <Button type="submit" variant="primary" size="lg">
               Send Message
-            </button>
+            </Button>
           </div>
         </form>
 

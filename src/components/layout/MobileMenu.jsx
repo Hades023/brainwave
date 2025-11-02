@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
+import Button from "../ui/Button.jsx";
 
 export default function MobileMenu({ open, onClose, links }) {
   const panelRef = useRef(null);
@@ -47,14 +48,15 @@ export default function MobileMenu({ open, onClose, links }) {
             <span className="inline-block h-6 w-6 rounded bg-white/80" aria-hidden />
             <span className="text-white font-semibold">Joe Anonymous</span>
           </a>
-          <button
+          <Button
             ref={closeBtnRef}
             onClick={onClose}
-            className="rounded px-3 py-2 ring-1 ring-white/30 text-white/90"
+            variant="secondary"
+            size="sm"
             aria-label="Close menu"
           >
             ✕
-          </button>
+          </Button>
         </div>
 
         <nav className="p-4">
@@ -78,13 +80,15 @@ export default function MobileMenu({ open, onClose, links }) {
           </ul>
 
           {/* Contact CTA */}
-          <a
+          <Button
+            as="a"
             href="/contact"
             onClick={onClose}
-            className="mt-4 inline-flex w-full justify-center rounded-lg bg-white px-4 py-2.5 font-medium text-black hover:opacity-90 transition"
+            variant="primary"
+            className="mt-4 w-full justify-center"
           >
             Contact Me
-          </a>
+          </Button>
         </nav>
       </div>
     </div>

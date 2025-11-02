@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
+import Button from "../components/ui/Button.jsx";
 import { projects } from "../data/projects.js";
 
 export default function Project() {
@@ -15,12 +16,9 @@ export default function Project() {
           <h1 className="text-2xl font-bold">Project not found</h1>
           <p className="mt-2 text-white/80">We couldn't find a project at /portfolio/{slug}</p>
           <div className="mt-6">
-            <button
-              onClick={() => navigate(-1)}
-              className="rounded-lg ring-1 ring-white/30 px-4 py-2 hover:bg-white/10 transition"
-            >
+            <Button onClick={() => navigate(-1)} variant="secondary" size="sm">
               Go Back
-            </button>
+            </Button>
           </div>
         </Container>
       </Section>
@@ -31,12 +29,12 @@ export default function Project() {
     <Section>
       <Container>
         <nav className="text-sm text-white/70">
-          <button
+          <Button
             onClick={() => navigate(-1)}
-            className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded"
+            variant="link"
           >
             ← Go Back
-          </button>
+          </Button>
         </nav>
 
         <header className="mt-4 max-w-3xl">

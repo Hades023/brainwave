@@ -1,5 +1,6 @@
 import Container from "../ui/Container.jsx";
 import Section from "../ui/Section.jsx";
+import Button from "../ui/Button.jsx";
 
 export default function FinalCTA() {
   return (
@@ -10,12 +11,9 @@ export default function FinalCTA() {
         </h2>
         <p className="mt-3 text-white/80 max-w-prose mx-auto">Contact me and let's chat.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <a
-            href="/contact"
-            className="rounded-lg bg-white text-black px-6 py-3 font-medium hover:opacity-90 transition"
-          >
+          <Button as="a" href="/contact" variant="primary">
             Contact me
-          </a>
+          </Button>
         </div>
       </Container>
     </Section>

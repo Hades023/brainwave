@@ -2,6 +2,7 @@
 import Container from "../ui/Container.jsx";
 import Section from "../ui/Section.jsx";
 import ProjectCard from "../ui/ProjectCard.jsx";
+import Button from "../ui/Button.jsx";
 import { projects } from "../../data/projects.js";
 
 export default function Projects({
@@ -39,13 +40,9 @@ export default function Projects({
         {/* Bottom CTA - only show if there are more projects and showViewMore is true */}
         {showViewMore && limit && projects.length > limit && (
           <div className="mt-10 flex justify-center">
-            <a
-              href="/portfolio"
-              className="rounded-lg ring-1 ring-white/30 px-6 py-3 text-white hover:bg-white/10 transition
-                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
-            >
+            <Button as="a" href="/portfolio" variant="secondary">
               View More of My Work
-            </a>
+            </Button>
           </div>
         )}
       </Container>
