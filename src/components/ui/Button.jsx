@@ -18,7 +18,7 @@ const Button = forwardRef(
   ) => {
     // Base styles that apply to all buttons
     const baseStyles =
-      "inline-flex items-center justify-center font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-lg disabled:cursor-not-allowed disabled:opacity-50 touch-target min-h-[44px]";
+      "inline-flex items-center justify-center font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-lg disabled:cursor-not-allowed disabled:opacity-50 min-h-[44px]";
 
     // Variant styles
     const variants = {

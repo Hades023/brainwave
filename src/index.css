@@ -106,7 +106,7 @@
     clip: rect(0, 0, 0, 0);
   }
   .focus\\:not-sr-only:focus {
-    @apply static w-auto h-auto p-auto m-auto overflow-visible whitespace-normal;
+    @apply static w-auto h-auto p-0 m-0 overflow-visible whitespace-normal;
     clip: auto;
   }
 
@@ -117,11 +117,6 @@
 
   /* Mobile optimizations */
   @media (max-width: 768px) {
-    /* Larger touch targets on mobile */
-    .touch-target {
-      @apply min-h-[44px] min-w-[44px];
-    }
-
     /* Better spacing for mobile */
     .mobile-px {
       @apply px-4;
@@ -141,12 +136,12 @@
     button,
     [role="button"],
     .btn {
-      @apply touch-target;
+      @apply min-h-[44px] min-w-[44px];
     }
 
     /* Ensure links are touchable */
     a {
-      @apply touch-target inline-flex items-center justify-center;
+      @apply min-h-[44px] min-w-[44px] inline-flex items-center justify-center;
     }
   }
 
