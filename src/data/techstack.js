@@ -22,6 +22,20 @@ export const techstack = [
     color: "#F7DF1E",
   },
   {
+    id: "jquery",
+    label: "jQuery",
+    href: "https://jquery.com/",
+    iconId: "jquery",
+    color: "#0769AD",
+  },
+  {
+    id: "gsap",
+    label: "GSAP",
+    href: "https://greensock.com/gsap/",
+    iconId: "gsap",
+    color: "#88CE02",
+  },
+  {
     id: "typescript",
     label: "TypeScript",
     href: "https://www.typescriptlang.org/",

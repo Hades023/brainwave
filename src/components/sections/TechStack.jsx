@@ -31,6 +31,8 @@ import {
   SiAdobe,
   SiSemrush,
   SiGooglesearchconsole,
+  SiJquery,
+  SiGreensock,
 } from "react-icons/si";
 import { DiW3C } from "react-icons/di";
 import { PiWaveSineBold } from "react-icons/pi";
@@ -40,6 +42,8 @@ const iconMap = {
   html5: FaHtml5,
   css3: FaCss3Alt,
   javascript: FaJs,
+  jquery: SiJquery,
+  gsap: SiGreensock,
   typescript: SiTypescript,
   react: FaReact,
   "react-native": FaReact,
