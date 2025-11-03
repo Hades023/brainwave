@@ -19,10 +19,7 @@ export default function Clients() {
         {/* Client logos grid */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
           {clients.map((client) => (
-            <div
-              key={client.id}
-              className="flex items-center justify-center p-4 hover-grayscale"
-            >
+            <div key={client.id} className="flex items-center justify-center p-4 hover-grayscale">
               <img
                 src={client.logo}
                 alt={`${client.name} logo`}

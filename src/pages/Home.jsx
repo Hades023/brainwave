@@ -12,7 +12,7 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 export default function Home() {
   return (
     <div>
-      <SEO 
+      <SEO
         title="Home"
         description="Christopher Hayes - UX Designer & Frontend Developer. Crafting digital experiences that combine beautiful design with seamless functionality."
         url="/"

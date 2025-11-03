@@ -30,19 +30,18 @@ export default function Project() {
 
   return (
     <Section>
-      <SEO 
+      <SEO
         title={project.title}
-        description={project.blurb || `${project.title} - A project by Christopher Hayes showcasing UX design and development skills.`}
+        description={
+          project.blurb ||
+          `${project.title} - A project by Christopher Hayes showcasing UX design and development skills.`
+        }
         url={`/portfolio/${project.id}`}
         image={project.image}
       />
       <Container>
-        <Breadcrumb 
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Work", href: "/work" },
-            { label: project.title }
-          ]} 
+        <Breadcrumb
+          items={[{ label: "Home", href: "/" }, { label: "Work", href: "/work" }, { label: project.title }]}
         />
 
         <nav className="body-small subheading-muted">

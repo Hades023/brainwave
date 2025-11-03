@@ -9,7 +9,7 @@ export default function Contact() {
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,11 +32,11 @@ export default function Contact() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    
+    setFormData((prev) => ({ ...prev, [name]: value }));
+
     // Clear error when user starts typing
     if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: "" }));
+      setErrors((prev) => ({ ...prev, [name]: "" }));
     }
   };
 
@@ -44,7 +44,7 @@ export default function Contact() {
     const { name, value } = e.target;
     if (value.trim()) {
       const error = validateField(name, value);
-      setErrors(prev => ({ ...prev, [name]: error }));
+      setErrors((prev) => ({ ...prev, [name]: error }));
     }
   };
 
@@ -55,8 +55,9 @@ export default function Contact() {
 
     // Validate all fields
     const newErrors = {};
-    Object.keys(formData).forEach(key => {
-      if (key !== "subject") { // subject is optional
+    Object.keys(formData).forEach((key) => {
+      if (key !== "subject") {
+        // subject is optional
         const error = validateField(key, formData[key]);
         if (error) newErrors[key] = error;
       }
@@ -93,7 +94,7 @@ export default function Contact() {
 
   return (
     <Section>
-      <SEO 
+      <SEO
         title="Contact"
         description="Get in touch with Christopher Hayes for your next project. Ready to work together on creating amazing digital experiences."
         url="/contact"
@@ -109,10 +110,20 @@ export default function Contact() {
         {/* Contact Form */}
         <form onSubmit={handleSubmit} className="mt-12 space-y-6" noValidate>
           {/* Form Status - ARIA Live Region */}
-          <div aria-live="polite" aria-atomic="true" className={submitStatus ? "text-center p-3 rounded-lg " + (submitStatus.includes("Thank") ? "bg-green-500/20 text-green-300" : "bg-red-500/20 text-red-300") : "sr-only"} id="form-status">
+          <div
+            aria-live="polite"
+            aria-atomic="true"
+            className={
+              submitStatus
+                ? "text-center p-3 rounded-lg " +
+                  (submitStatus.includes("Thank") ? "bg-green-500/20 text-green-300" : "bg-red-500/20 text-red-300")
+                : "sr-only"
+            }
+            id="form-status"
+          >
             {submitStatus}
           </div>
-          
+
           {/* Name Field */}
           <div>
             <label htmlFor="name" className="label-form">

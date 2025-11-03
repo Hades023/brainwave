@@ -13,7 +13,7 @@ export default function MobileMenu({ open, onClose, links }) {
 
     const onKey = (e) => {
       if (e.key === "Escape") onClose();
-      
+
       // Simple focus trap - if tab reaches end, wrap to beginning
       if (e.key === "Tab") {
         const focusableElements = panelRef.current?.querySelectorAll(
@@ -21,7 +21,7 @@ export default function MobileMenu({ open, onClose, links }) {
         );
         const firstElement = focusableElements?.[0];
         const lastElement = focusableElements?.[focusableElements.length - 1];
-        
+
         if (e.shiftKey && document.activeElement === firstElement) {
           e.preventDefault();
           lastElement?.focus();

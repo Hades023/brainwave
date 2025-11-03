@@ -23,17 +23,20 @@ A modern, accessible portfolio website built with React, Vite, and Tailwind CSS.
 ## 📦 Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd portfolio_website
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -65,19 +68,24 @@ src/
 ## 🎨 Customization
 
 ### Colors and Theme
+
 The site uses a custom dark theme defined in `src/index.css`. Key color variables:
+
 - Primary background: `#0a0a0b` to `#1a1a1d` gradient
 - Glass effects: `white/5` with `white/10` borders
 - Text hierarchy: `white`, `white/80`, `white/70`
 
 ### Content Updates
+
 1. **Projects**: Edit `src/data/projects.js`
 2. **Tech Stack**: Edit `src/data/techstack.js`
 3. **Testimonials**: Edit `src/data/testimonials.js`
 4. **Personal Info**: Update contact details in `src/pages/Contact.jsx`
 
 ### Styling
+
 The project uses custom Tailwind utility classes defined in `src/index.css`:
+
 - `heading-*` classes for consistent typography
 - `body-*` classes for body text
 - `card-*` classes for consistent card styling
@@ -103,6 +111,7 @@ The project uses custom Tailwind utility classes defined in `src/index.css`:
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
+
 1. Connect your GitHub repository to Vercel
 2. Configure build settings:
    - Build Command: `npm run build`
@@ -110,6 +119,7 @@ The project uses custom Tailwind utility classes defined in `src/index.css`:
 3. Deploy automatically on push to main branch
 
 ### Netlify
+
 1. Connect your repository to Netlify
 2. Configure build settings:
    - Build Command: `npm run build`
@@ -117,6 +127,7 @@ The project uses custom Tailwind utility classes defined in `src/index.css`:
 3. Enable automatic deployments
 
 ### Manual Deployment
+
 1. Build the project:
    ```bash
    npm run build
@@ -137,6 +148,7 @@ The contact form uses Formspree for handling submissions. To set up:
 ## 🔒 Environment Variables
 
 For local development, create a `.env.local` file:
+
 ```
 VITE_FORMSPREE_ID=your_formspree_id
 VITE_SITE_URL=http://localhost:5173
@@ -157,6 +169,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Support
 
 For questions or support, please contact:
+
 - Email: christopher.brandon.hayes@gmail.com
 - LinkedIn: [Christopher Hayes](https://linkedin.com/in/christopher-hayes)
 
