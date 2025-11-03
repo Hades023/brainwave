@@ -99,6 +99,123 @@
   .hover-grayscale {
     @apply transition-all duration-300 hover:grayscale;
   }
+  
+  /* Accessibility */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+    clip: rect(0, 0, 0, 0);
+  }
+  .focus\\:not-sr-only:focus {
+    @apply static w-auto h-auto p-auto m-auto overflow-visible whitespace-normal;
+    clip: auto;
+  }
+  
+  /* Enhanced Focus Styles */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-white/60 focus:ring-offset-2 focus:ring-offset-black;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    /* Larger touch targets on mobile */
+    .touch-target {
+      @apply min-h-[44px] min-w-[44px];
+    }
+
+    /* Better spacing for mobile */
+    .mobile-px {
+      @apply px-4;
+    }
+
+    .mobile-py {
+      @apply py-2;
+    }
+
+    /* Prevent text size adjustment on orientation change */
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    /* Better button sizing on mobile */
+    button, [role="button"], .btn {
+      @apply touch-target;
+    }
+
+    /* Ensure links are touchable */
+    a {
+      @apply touch-target inline-flex items-center justify-center;
+    }
+  }
+
+  /* Landscape mobile optimizations */
+  @media (max-height: 500px) and (orientation: landscape) {
+    /* Reduce vertical spacing in landscape */
+    .landscape-compact {
+      @apply py-2;
+    }
+
+    /* Make navigation more compact */
+    .mobile-nav {
+      @apply h-12;
+    }
+
+    /* Reduce hero height in landscape */
+    .hero-section {
+      @apply min-h-[60vh];
+    }
+  }
+
+  /* Focus visible for better keyboard navigation */
+  @supports selector(:focus-visible) {
+    .focus-ring {
+      @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black;
+    }
+  }
+
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .text-white\/70 {
+      @apply text-white/90;
+    }
+    
+    .text-white\/80 {
+      @apply text-white;
+    }
+    
+    .border-white\/10 {
+      @apply border-white/30;
+    }
+    
+    .bg-white\/5 {
+      @apply bg-white/10;
+    }
+  }
+
+  /* Reduce animations for users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .no-motion {
+      @apply transition-none;
+    }
+    
+    .no-motion * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 :root {

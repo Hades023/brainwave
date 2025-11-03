@@ -7,7 +7,7 @@ export default function ProjectCard({ image, title, blurb, href = "#" }) {
       <div className="aspect-[4/3] w-full overflow-hidden border-b border-white/10">
         <img
           src={image}
-          alt={`${title} cover`}
+          alt={`Screenshot of ${title} project showing the main interface and features`}
           className="h-full w-full object-cover hover-scale-subtle"
           loading="lazy"
         />

@@ -7,12 +7,29 @@ export default function MobileMenu({ open, onClose, links }) {
   const panelRef = useRef(null);
   const closeBtnRef = useRef(null);
 
-  // Close on ESC + lock scroll while open + focus the close button
+  // Close on ESC + lock scroll while open + focus the close button + focus trap
   useEffect(() => {
     if (!open) return;
 
     const onKey = (e) => {
       if (e.key === "Escape") onClose();
+      
+      // Simple focus trap - if tab reaches end, wrap to beginning
+      if (e.key === "Tab") {
+        const focusableElements = panelRef.current?.querySelectorAll(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        const firstElement = focusableElements?.[0];
+        const lastElement = focusableElements?.[focusableElements.length - 1];
+        
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement?.focus();
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement?.focus();
+        }
+      }
     };
 
     const prevOverflow = document.body.style.overflow;

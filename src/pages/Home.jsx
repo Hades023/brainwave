@@ -1,6 +1,7 @@
 import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
 import Button from "../components/ui/Button.jsx";
+import SEO from "../components/ui/SEO.jsx";
 import TechStack from "../components/sections/TechStack.jsx";
 import Projects from "../components/sections/Projects.jsx";
 import Testimonials from "../components/sections/Testimonials.jsx";
@@ -10,7 +11,12 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main id="main-content">
+    <div>
+      <SEO 
+        title="Home"
+        description="Christopher Hayes - UX Designer & Frontend Developer. Crafting digital experiences that combine beautiful design with seamless functionality."
+        url="/"
+      />
       <Section
         as="section"
         aria-labelledby="intro-heading"
@@ -107,6 +113,6 @@ export default function Home() {
       <Testimonials limit={3} />
       <Clients />
       <FinalCTA />
-    </main>
+    </div>
   );
 }

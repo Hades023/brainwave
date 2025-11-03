@@ -2,6 +2,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
 import Button from "../components/ui/Button.jsx";
+import Breadcrumb from "../components/ui/Breadcrumb.jsx";
+import SEO from "../components/ui/SEO.jsx";
 import { projects } from "../data/projects.js";
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -28,7 +30,21 @@ export default function Project() {
 
   return (
     <Section>
+      <SEO 
+        title={project.title}
+        description={project.blurb || `${project.title} - A project by Christopher Hayes showcasing UX design and development skills.`}
+        url={`/portfolio/${project.id}`}
+        image={project.image}
+      />
       <Container>
+        <Breadcrumb 
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Work", href: "/work" },
+            { label: project.title }
+          ]} 
+        />
+
         <nav className="body-small subheading-muted">
           <Button onClick={() => navigate(-1)} variant="link" leftIcon={<FaArrowLeft className="w-4 h-4" />}>
             Go Back
