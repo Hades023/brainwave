@@ -1,29 +1,36 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Container from "../ui/Container.jsx";
+import Button from "../ui/Button.jsx";
+import MobileMenu from "./MobileMenu.jsx";
+import { FaHamburger } from "react-icons/fa";
 
 const links = [
-  { to: "/features", label: "Features" },
-  { to: "/pricing", label: "Pricing" },
-  { to: "/how-to-use", label: "How to Use" },
-  { to: "/roadmap", label: "Roadmap" },
+  { to: "/about", label: "About Me" },
+  { to: "/portafolio", label: "Portafolio" },
+  { to: "/resume", label: "Resume" },
 ];
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 bg-black/70 backdrop-blur">
-      <Container className="flex h-16 items-center justify-between">
+      <Container className="flex h-16 items-center ">
         {/*Left: logo/Brand */}
-        <a href="/" className="flex items-center gap-2">
-          <span
-            className="inline-block h-6 w-6 rounded bg-white/80"
-            aria-hidden
-          />
-          <span className="text-white font-semibold">Brainwave</span>
-        </a>
+        <div className="flex-1 flex justify-start">
+          <a
+            href="/"
+            aria-label="Home - Ivan V"
+            className="flex items-center gap-2"
+          >
+            <span className="text-white font-semibold">Ivan V</span>
+          </a>
+        </div>
 
         {/* Center: Nav LInks (hide on small screens) */}
-        <nav className="hidden md:block">
-          <ul className="flex items-center gap-6 text-sm text-white/80">
+        <nav className="flex justify-center flex-none text-center">
+          <ul className="hidden md: flex items-center gap-6 body-small">
             {links.map((link) => (
               <li key={link.to}>
                 <NavLink
@@ -39,21 +46,36 @@ export default function Navbar() {
             <li></li>
           </ul>
         </nav>
+
         {/* Right: Primary CTA (hide on samll screens) */}
-        <a
-          href="/sign-up"
-          className="hideen md: inline-block rounded-lg px-4 py-2 txt-sm font-medium text-black bg-white hover:opacity-90 transition hover:scale-[1.05]"
-        >
-          Get Started
-        </a>
-        {/* Mobile Menu Toggle (show on small screens)*/}
-        <button
-          className="md:hidden inline-flex items-center justify-center founded px-3 py-2 ring-1 ring-white/30 text-white/90"
-          aria-label="Open menu"
-        >
-          ☰
-        </button>
+        <div className="flex-1 flex justify-end">
+          {/* Desktop CTA */}
+          <Button
+            as="a"
+            href="/contact"
+            variant="primary"
+            size="sm"
+            className="hidden md: inline-flex"
+          >
+            Contact Me
+          </Button>
+          {/*Mobile menu button */}
+          <Button
+            variant="secondary"
+            size="sm"
+            className="md:hidden ml-2"
+            aria-label="Open menu"
+            aria-expanded={open ? "true" : "false"}
+            aria-controls="mobile-menu"
+            onClick={() => setOpen(true)}
+          >
+            <FaHamburger />
+          </Button>
+        </div>
       </Container>
+
+      {/*Mobile slide-over */}
+      <MobileMenu open={open} onClose={() => setOpen(false)} links={links} />
     </header>
   );
 }
