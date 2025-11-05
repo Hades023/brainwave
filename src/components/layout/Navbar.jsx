@@ -30,7 +30,7 @@ export default function Navbar() {
 
         {/* Center: Nav LInks (hide on small screens) */}
         <nav className="flex justify-center flex-none text-center">
-          <ul className="hidden md: flex items-center gap-6 body-small">
+          <ul className="hidden md:flex items-center gap-6 body-small">
             {links.map((link) => (
               <li key={link.to}>
                 <NavLink
@@ -55,7 +55,7 @@ export default function Navbar() {
             href="/contact"
             variant="primary"
             size="sm"
-            className="hidden md: inline-flex"
+            className="hidden md:inline-flex"
           >
             Contact Me
           </Button>
