@@ -36,20 +36,6 @@ export default function SEO({
     updateMetaTag("robots", "index, follow");
     updateMetaTag("author", "Student Name Here");
 
-    // Open Graph / Facebook
-    updateMetaTag("og:type", type, true);
-    updateMetaTag("og:title", fullTitle, true);
-    updateMetaTag("og:description", description, true);
-    updateMetaTag("og:image", image, true);
-    updateMetaTag("og:url", url, true);
-    updateMetaTag("og:site_name", siteName, true);
-
-    // Twitter
-    updateMetaTag("twitter:card", "summary_large_image");
-    updateMetaTag("twitter:title", fullTitle);
-    updateMetaTag("twitter:description", description);
-    updateMetaTag("twitter:image", image);
-
     // Update canonical link
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
