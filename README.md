@@ -1,4 +1,4 @@
-# YOUR NAME HERE - Portfolio Website
+# CB Hayes - Portfolio Website
 
 A modern, accessible portfolio website built with React, Vite, and Tailwind CSS. Features a sleek dark theme, smooth animations, and comprehensive accessibility support.
 
@@ -171,8 +171,8 @@ This project is open source and available under the [MIT License](LICENSE).
 For questions or support, please contact:
 
 - Email: christopher.brandon.hayes@gmail.com
-- LinkedIn: [YOUR NAME HERE](https://linkedin.com/in/your-profile)
+- LinkedIn: [CB Hayes](https://www.linkedin.com/in/cbhayes/)
 
 ---
 
-Built with ❤️ by YOUR NAME HERE
+Built with ❤️ by CB Hayes
