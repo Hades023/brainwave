@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <SEO
         title="Home"
-        description="Christopher Hayes - UX Designer & Frontend Developer. Crafting digital experiences that combine beautiful design with seamless functionality."
+        description="YOUR NAME HERE - UX Designer & Frontend Developer. Crafting digital experiences that combine beautiful design with seamless functionality."
         url="/"
       />
       <Section

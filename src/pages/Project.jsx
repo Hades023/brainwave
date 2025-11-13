@@ -33,8 +33,7 @@ export default function Project() {
       <SEO
         title={project.title}
         description={
-          project.blurb ||
-          `${project.title} - A project by Christopher Hayes showcasing UX design and development skills.`
+          project.blurb || `${project.title} - A project by YOUR NAME HERE showcasing UX design and development skills.`
         }
         url={`/portfolio/${project.id}`}
         image={project.image}
