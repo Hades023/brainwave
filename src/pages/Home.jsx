@@ -5,7 +5,6 @@ import SEO from "../components/ui/SEO.jsx";
 import TechStack from "../components/sections/TechStack.jsx";
 import Projects from "../components/sections/Projects.jsx";
 import Testimonials from "../components/sections/Testimonials.jsx";
-import Clients from "../components/sections/Clients.jsx";
 import FinalCTA from "../components/sections/FinalCTA.jsx";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
@@ -42,7 +41,7 @@ export default function Home() {
                   Check Out My Work
                 </Button>
                 <Button as="a" href="/resume" aria-label="Download my resume" variant="secondary">
-                  Download My Resume
+                  View My Resume
                 </Button>
               </div>
 
@@ -76,20 +75,6 @@ export default function Home() {
                       GitHub
                     </Button>
                   </li>
-
-                  <li>
-                    <Button
-                      as="a"
-                      href="https://www.instagram.com/placeholder"
-                      target="_blank"
-                      rel="noreferrer"
-                      variant="link"
-                      leftIcon={<FaInstagram className="w-5 h-5" />}
-                      aria-label="Instagram (opens in a new tab)"
-                    >
-                      Instagram
-                    </Button>
-                  </li>
                 </ul>
               </nav>
             </div>
@@ -111,7 +96,6 @@ export default function Home() {
       <TechStack />
       <Projects limit={6} />
       <Testimonials limit={3} />
-      <Clients />
       <FinalCTA />
     </div>
   );

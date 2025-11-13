@@ -71,7 +71,7 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch("https://formspree.io/f/xpwooeag", {
+      const response = await fetch("YOUR URL GOES HERE", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -96,7 +96,7 @@ export default function Contact() {
     <Section>
       <SEO
         title="Contact"
-        description="Get in touch with Christopher Hayes for your next project. Ready to work together on creating amazing digital experiences."
+        description="Get in touch with YOUR NAME HERE for your next project. Ready to work together on creating amazing digital experiences."
         url="/contact"
       />
       <Container className="max-w-2xl">
@@ -236,12 +236,12 @@ export default function Contact() {
         <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="text-white/70 mb-4">Or reach out directly:</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="mailto:christopher.brandon.hayes@gmail.com" className="text-white/80 hover:text-white transition">
-              christopher.brandon.hayes@gmail.com
+            <a href="mailto:YOUR EMAIL HERE" className="text-white/80 hover:text-white transition">
+              YOUR EMAIL HERE
             </a>
             <span className="hidden sm:block text-white/30">•</span>
-            <a href="tel:+1-314-223-0739" className="text-white/80 hover:text-white transition">
-              (314) 223-0739
+            <a href="tel:+1-555-555-5555" className="text-white/80 hover:text-white transition">
+              (555) 555-5555
             </a>
           </div>
         </div>

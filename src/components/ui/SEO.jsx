@@ -1,7 +1,13 @@
 import { useEffect } from "react";
 
-export default function SEO({ title, description, image = "/vite.svg", url = window.location.href, type = "website" }) {
-  const siteName = "Christopher Hayes - Portfolio";
+export default function SEO({
+  title,
+  description,
+  image = "/assets/brackets-curly-svgrepo-com.svg",
+  url = window.location.href,
+  type = "website",
+}) {
+  const siteName = "Student Name Here - Portfolio";
   const fullTitle = title ? `${title} | ${siteName}` : siteName;
 
   useEffect(() => {
@@ -28,7 +34,7 @@ export default function SEO({ title, description, image = "/vite.svg", url = win
     // Basic Meta Tags
     updateMetaTag("description", description);
     updateMetaTag("robots", "index, follow");
-    updateMetaTag("author", "Christopher Hayes");
+    updateMetaTag("author", "Student Name Here");
 
     // Open Graph / Facebook
     updateMetaTag("og:type", type, true);
