@@ -1,6 +1,6 @@
-# CB Hayes - Portfolio Website
+# CB Hayes - Reusable Portfolio Website
 
-A modern, accessible portfolio website built with React, Vite, and Tailwind CSS. Features a sleek dark theme, smooth animations, and comprehensive accessibility support.
+A modern, accessible portfolio website built with React, Vite, and Tailwind CSS. Features a sleek dark theme, minimal, but smooth animations, and comprehensive accessibility support.
 
 ## 🚀 Features
 
