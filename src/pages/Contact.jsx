@@ -71,7 +71,7 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch("YOUR URL GOES HERE", {
+      const response = await fetch("https://formspree.io/f/mkgkgleb", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -236,12 +236,12 @@ export default function Contact() {
         <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="text-white/70 mb-4">Or reach out directly:</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="mailto:YOUR EMAIL HERE" className="text-white/80 hover:text-white transition">
-              YOUR EMAIL HERE
+            <a href="mailto:ifraire023@gmail.com" className="text-white/80 hover:text-white transition">
+              ifraire023@gmail.com
             </a>
             <span className="hidden sm:block text-white/30">•</span>
-            <a href="tel:+1-555-555-5555" className="text-white/80 hover:text-white transition">
-              (555) 555-5555
+            <a href="tel:+1-913-326-0475" className="text-white/80 hover:text-white transition">
+              (913) 326-0475
             </a>
           </div>
         </div>

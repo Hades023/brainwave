@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Left: Brand */}
           <div className="flex-1 text-center md:text-left">
             <a href="/" className="text-white font-semibold text-lg">
-              Joe Anonymous
+              Ivan Villagrana
             </a>
           </div>
 

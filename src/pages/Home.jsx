@@ -7,13 +7,14 @@ import Projects from "../components/sections/Projects.jsx";
 import Testimonials from "../components/sections/Testimonials.jsx";
 import FinalCTA from "../components/sections/FinalCTA.jsx";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import Portrait from "../assets/images/portrait.jpg"
 
 export default function Home() {
   return (
     <div>
       <SEO
         title="Home"
-        description="YOUR NAME HERE - UX Designer & Frontend Developer. Crafting digital experiences that combine beautiful design with seamless functionality."
+        description="Ivan Villagrana - UX Designer & Frontend Developer. Crafting digital experiences that combine beautiful design with seamless functionality."
         url="/"
       />
       <Section
@@ -26,13 +27,12 @@ export default function Home() {
             {/* Text Content - 2/3 */}
             <div className="lg:col-span-2 text-center lg:text-left">
               <h1 id="intro-heading" className="heading-hero">
-                Hi, my name is Joe Anonymous. I create things for the web
+                Hi, my name is Ivan. I happen to be able to create things on the web!
               </h1>
 
               <h2 className="mt-4 max-w-prose lg:mx-0 mx-auto body-large">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget
-                finibus urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere
-                malesuada
+                Take a look around this virtual portfolio of mines and explore some of the projects I have created. 
+                I am able to leverage my background and create web content in both English and Spanish. 
               </h2>
 
               {/* CTAs */}
@@ -51,7 +51,7 @@ export default function Home() {
                   <li>
                     <Button
                       as="a"
-                      href="https://www.linkedin.com/in/placeholder"
+                      href="https://www.linkedin.com/in/ivanvillagrana"
                       target="_blank"
                       rel="noreferrer"
                       variant="link"
@@ -65,7 +65,7 @@ export default function Home() {
                   <li>
                     <Button
                       as="a"
-                      href="https://github.com/placeholder"
+                      href="https://github.com/Hades023"
                       target="_blank"
                       rel="noreferrer"
                       variant="link"
@@ -80,11 +80,11 @@ export default function Home() {
             </div>
 
             {/* Circular Image - 1/3 */}
-            <div className="lg:col-span-1 flex justify-center lg:justify-end">
+            <div className="lg:col-span-1 flex justify-center lg:justify-center">
               <div className="w-64 h-64 lg:w-80 lg:h-80 card-avatar">
                 <img
-                  src="https://picsum.photos/320?random=100"
-                  alt="Joe Anonymous"
+                  src={Portrait}
+                  alt="Ivan Villagrana"
                   className="w-full h-full object-cover"
                 />
               </div>

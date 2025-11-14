@@ -30,7 +30,7 @@ export default function Navbar() {
           {/* Left: brand (flex-1) */}
           <div className="flex-1 flex justify-start">
             <a href="/" aria-label="Home — Joe Anonymous" className="flex items-center gap-2">
-              <span className="text-white font-semibold">Joe Anonymous</span>
+              <span className="text-white font-semibold">Ivan Villagrana</span>
             </a>
           </div>
 

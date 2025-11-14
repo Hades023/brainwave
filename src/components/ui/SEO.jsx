@@ -7,7 +7,7 @@ export default function SEO({
   url = window.location.href,
   type = "website",
 }) {
-  const siteName = "Student Name Here - Portfolio";
+  const siteName = "Ivan Villagrana- Portfolio";
   const fullTitle = title ? `${title} | ${siteName}` : siteName;
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function SEO({
     // Basic Meta Tags
     updateMetaTag("description", description);
     updateMetaTag("robots", "index, follow");
-    updateMetaTag("author", "Student Name Here");
+    updateMetaTag("author", "Ivan Villagrana");
 
     // Update canonical link
     let canonical = document.querySelector('link[rel="canonical"]');
