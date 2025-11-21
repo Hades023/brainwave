@@ -66,7 +66,7 @@ export default function Project() {
           <div>
             <h2 className="subheading-primary">Overview</h2>
             <p className="mt-2 body-default">
-              Replace this with a short case study: problem, your role, tools, constraints, outcome.
+              {project.overview || "No overview available for this project."}
             </p>
 
             <h3 className="mt-6 font-semibold">Highlights</h3>

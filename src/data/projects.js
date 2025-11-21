@@ -5,6 +5,17 @@ export const projects = [
     blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis.",
     image: "https://picsum.photos/300?random=1",
     href: "/portfolio/p1",
+    overview:
+      "This project addressed the challenge of imporving user engagement throguh intuitive desing and seamless functionality.",
+    highlights: [
+      "Increased user engagement by 45% through imporved UX design",
+      "Implemented responsive desing system using React and TypeScript",
+      "Deliverd project 2 weeks ahead of schedule within budget constrains",
+    ],
+    role: "UX Designer & Frontend Developer",
+    tools: ["Figma", "React", "TypeScript", "Tailwind CSS"],
+    timeline: "3 months",
+    client: "Tech Startup",
   },
   {
     id: "p2",
